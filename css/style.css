@@ -1,0 +1,68 @@
+md-toolbar { background-color: #fff; }
+md-toolbar, md-icon, .md-button { color: #888 !important; }
+.md-toolbar-tools > .md-button:first-child {
+	padding-left: 20px;
+	text-align: left;
+}
+.md-toolbar-tools h2 {
+	margin: 0 auto;
+	padding-left: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+}
+.md-accent {
+	margin-left: 0;
+	padding-bottom: 0;
+}
+md-input-container input {
+	font-size: 0.9rem;
+	margin-left: 5px;
+	padding-left: 25px;
+}
+md-list#side-menu md-list-item a {
+	border-bottom: #fff 1px solid;
+	color: #444;
+	margin: 0 auto 15px;
+	padding: 8px 10px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+md-list#side-menu md-list-item a:hover {
+	border-bottom: #000 1px solid;
+}
+.header md-toolbar md-icon.md-default-theme { color: #fff; }
+md-grid-list { margin: 1px; }
+md-grid-tile { transition: all 400sms ease-out 50ms; }
+md-grid-tile h3 {
+	border-top: #fff 2px ridge;
+	color: #fff;
+	font-size: 1.1rem !important;
+	letter-spacing: 3px;
+	padding-top: 8px;
+	text-align: center;
+	text-shadow: 0 1px 2px #333;
+	text-transform: uppercase;
+}
+md-grid-tile figure { opacity: 0.5; }
+md-grid-tile figure, md-grid-tile figure:hover, md-grid-tile figure:active {
+	transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+	-moz-transition: opacity 0.3s ease-out, -moz-transform 0.3s ease-out;
+	-o-transition: opacity 0.3s ease-out, -o-transform 0.3s ease-out;
+	-webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+}
+md-grid-tile figure:hover, md-grid-tile figure:active {
+	cursor: pointer;
+	background-color: rgba(0,0,0,0.4) !important;
+	opacity: 1;
+}
+#about { background: url(../img/menu_about.jpg) top left no-repeat; }
+#library { background: url(../img/menu_library.jpg) top left no-repeat; }
+#shades { background: url(../img/menu_shades.jpg) top left no-repeat; }
+#bedding { background: url(../img/menu_bedding.jpg) top left no-repeat; }
+#collections { background: url(../img/menu_collections.jpg) top left no-repeat; }
+#weaveup { background: url(../img/menu_weaveup.jpg) top left no-repeat; }
+#media { background: url(../img/menu_media.jpg) top left no-repeat; }
+#contact { background: url(../img/menu_contact.jpg) top left no-repeat; }
+#about, #library, #shades, #bedding, #collections, #weaveup, #media, #contact { background-size: cover; }

@@ -1,0 +1,246 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Angular Material - VFF Demo App</title>
+	<meta name="description" content="VFF demo app using Angular Material and NodeJS.">
+	<link rel="stylesheet" href="css/angular-material.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+	<style>
+		md-toolbar { background-color: #fff; }
+		md-toolbar, md-icon, .md-button { color: #888 !important; }
+		md-input-container input {
+			font-size: 0.9rem;
+			margin-left: 5px;
+			padding-left: 25px;
+		}
+		md-list#side-menu md-list-item a {
+			border-bottom: #fff 1px solid;
+			color: #444;
+			margin: 0 auto 15px;
+			padding: 8px 10px;
+			text-align: center;
+			text-decoration: none;
+			text-transform: uppercase;
+		}
+		md-list#side-menu md-list-item a:hover {
+			border-bottom: #000 1px solid;
+		}
+		md-grid-list { margin: 1px; }
+		md-grid-tile { transition: all 400ms ease-out 50ms; }
+		md-grid-tile h3 {
+			border-top: #fff 2px ridge;
+			color: #fff;
+			font-size: 1.1rem !important;
+			letter-spacing: 3px;
+			padding-top: 8px;
+			text-align: center;
+			text-shadow: 0 1px 2px #333;
+			text-transform: uppercase;
+		}
+		md-grid-tile figure { opacity: 0.5; }
+		md-grid-tile figure, md-grid-tile figure:hover, md-grid-tile figure:active {
+			transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+			-moz-transition: opacity 0.3s ease-out, -moz-transform 0.3s ease-out;
+			-o-transition: opacity 0.3s ease-out, -o-transform 0.3s ease-out;
+			-webkit-transition: opacity 0.3s ease-out, -webkit-transform 0.3s ease-out;
+		}
+		md-grid-tile figure:hover, md-grid-tile figure:active {
+			cursor: pointer;
+			background-color: rgba(0,0,0,0.4) !important;
+			opacity: 1;
+		}
+	</style>
+	<div ng-controller="AppCtrl" class="header" ng-app="VffDemo">
+		<!-- Splash Screen:
+		<div md-swipe-down="onSwipDown()">Rotating Images</div> -->
+
+		<!-- Login Dialog:
+		<md-dialog>
+			<md-dialog-content>
+				<h3>Login to your account</h3>
+				<form name="loginForm">
+					<md-input-container class="md-block">
+						<label for="userEmail">Email</label>
+						<input required type="email" name="userEmail" minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+					</md-input-container>
+					<md-input-container class="md-block">
+						<label for="userPassword">Email</label>
+						<input required type="password" name="userPassword" />
+					</md-input-container>
+					<md-input-container class="md-block">
+						<md-checkbox ng-model="isChecked" aria-label="Remember Me">Remember Me</md-checkbox>
+					</md-input-container>
+					<button class="md-raised md-button" type="button">Login</button>
+				</form>
+				<a href="#">Forgot your Password?</a>
+				<hr>
+				<h3>New Customer?</h3>
+				<button class="md-raised md-button" type="button">Create an Account</button>
+			</md-dialog-content>
+			<md-dialog-actions>
+				<md-button ng-click="closeDialog()" class="md-primary">Close Dialog</md-button>
+			</md-dialog-actions>
+		</md-dialog>-->
+
+		<!-- Top Nav and Sidebar -->
+		<md-sidenav class="md-sidenav-left md-whiteframe-z2"
+		md-component-id="left">
+			<md-toolbar layout="row">
+				<div class="md-toolbar-tools">
+					<h2><span>Menu</span></h2>
+					<span flex></span>
+					<md-button class="md-icon-button" aria-label="Close Side Panel" ng-click="closeSideNavPanel()">
+						<md-icon class="md-default-theme" class="material-icons">&#xE5CD;</md-icon>
+					</md-button>
+				</div>
+			</md-toolbar> 
+			<md-content>
+				<md-list id="side-menu">
+					<!-- <md-list-item>
+						<a href="#">{{menuSide.link}}</a>
+					</md-list-item> -->
+					<md-list-item>
+						<a href="#">Valley Forge</a>
+					</md-list-item>
+					<md-list-item>
+						<a href="#">Library</a>
+					</md-list-item>
+					<md-list-item>
+						<a href="#">Products</a>
+					</md-list-item>
+					<md-list-item>
+						<a href="#">Media</a>
+					</md-list-item>
+					<md-list-item>
+						<a href="#">Careers</a>
+					</md-list-item>
+					<md-list-item>
+						<a href="#">Contact</a>
+					</md-list-item>
+				</md-list>
+			</md-content> 
+		</md-sidenav>
+		<md-toolbar>
+			<div class="md-toolbar-tools" data-ng-show="showMobileMainHeader">
+				<md-button class="md-icon-button" aria-label="Side Panel" ng-click="openSideNavPanel()" flex="10">
+					<md-icon class="md-default-theme" class="material-icons">&#xE5D2;</md-icon>
+				</md-button>
+				<h2 flex>Valley Forge Fabrics</h2>
+				<md-button class="md-icon-button" aria-label="Search" data-ng-click="showMobileMainHeader = false">
+					<md-icon class="material-icons">&#xE8B6;</md-icon>
+				</md-button>
+				<md-button>
+					<a href="#">Login</a>
+				</md-button>
+			</div>
+			<div class="md-toolbar-tools" data-ng-hide="showMobileMainHeader">
+				<md-button class="md-icon-button" aria-label="Back" data-ng-click="showMobileMainHeader = true" flex="10">
+					<md-icon class="material-icons">&#xE5C4;</md-icon>
+				</md-button>
+				<h2 flex>Valley Forge Fabrics</h2>
+				<md-input-container md-no-float class="md-accent" style="padding-bottom: 0;">
+					<input ng-model="searchInput" placeholder="Search">
+				</md-input-container>
+				<md-button class="md-icon-button" aria-label="Search">
+					<md-icon class="material-icons">&#xE163;</md-icon>
+				</md-button>
+				<md-button>
+					<a href="#">Login</a>
+				</md-button>
+			</div>
+		</md-toolbar>
+		
+		<!-- Menu Grid
+		ng-slide-down? -->
+		<md-grid-list md-cols-gt-md="4" md-cols-md="2" md-cols-sm="1" md-gutter="2px" md-row-height="9:10" layout="row">
+			<!-- <md-grid-tile id="{{menuTiles.menuId}}">
+				<h3>{{menuTiles.title}}</h3>
+			</md-grid-tile> -->
+			<md-grid-tile id="about">
+				<h3>About Us</h3>
+			</md-grid-tile>
+			<md-grid-tile id="library">
+				<h3>Library</h3>
+			</md-grid-tile>
+			<md-grid-tile id="shades">
+				<h3>Roller Shades</h3>
+			</md-grid-tile>
+			<md-grid-tile id="collections">
+				<h3>Bedding</h3>
+			</md-grid-tile>
+			<md-grid-tile id="collections">
+				<h3>Fabric Collections</h3>
+			</md-grid-tile>
+			<md-grid-tile id="weaveup">
+				<h3>WeaveUp</h3>
+			</md-grid-tile>
+			<md-grid-tile id="media">
+				<h3>Media</h3>
+			</md-grid-tile>
+			<md-grid-tile id="contact">
+				<h3>Contact</h3>
+			</md-grid-tile>
+		</md-grid-list>
+	</div>
+	<script src="js/angular.js"></script>
+	<script src="js/angular-animate.min.js"></script>
+	<script src="js/angular-route.min.js"></script>
+	<script src="js/angular-aria.min.js"></script>
+	<script src="js/angular-messages.min.js"></script>
+	<script src="js/angular-material.js"></script>
+	<script>
+		angular.module('VffDemo', ['ngMaterial'])
+		.controller('AppCtrl', function($scope, $mdSidenav) {
+			$scope.showMobileMainHeader = true;
+			$scope.openSideNavPanel = function() {
+				$mdSidenav('left').open();
+			};
+			$scope.closeSideNavPanel = function() {
+				$mdSidenav('left').close();
+			};
+
+			// $scope.onSwipeDown = function() {
+			// 	console.log('Fade Out Splash, Slide Up Grid List');
+			// };
+
+			// $scope.menuSide [
+			// 	{ link: 'Valley Forge' }, 
+			// 	{ link: 'Library' }, 
+			// 	{ link: 'Products' }, 
+			// 	{ link: 'Media' }, 
+			// 	{ link: 'Careers' }, 
+			// 	{ link: 'Contact' }
+			// ];
+
+			// $scope.menuTiles = [{
+			// 	menuId: 'about',
+			// 	title: 'About Us',
+			// }, {
+			// 	menuId: 'library',
+			// 	title: 'Library',
+			// }, {
+			// 	menuId: 'shades',
+			// 	title: 'Roller Shades',
+			// }, {
+			// 	menuId: 'bedding',
+			// 	title: 'Bedding',
+			// }, {
+			// 	menuId: 'collections',
+			// 	title: 'Fabric Collections',
+			// }, {
+			// 	menuId: 'weaveup',
+			// 	title: 'WeaveUp',
+			// }, {
+			// 	menuId: 'media',
+			// 	title: 'Media',
+			// }, {
+			// 	menuId: 'contact',
+			// 	title: 'Contact',
+			// }];
+		})
+	</script>
+</body>
+</html>
