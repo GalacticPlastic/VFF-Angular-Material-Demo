@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="description" content="VFF demo app using Angular Material and NodeJS.">
+	<!-- <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Angular Material - VFF Demo App</title>
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+</head>
+<body>
+	<!-- <header ng-cloak> -->
+		<md-toolbar layout="row">
+			<!--hamburger side menu -->
+			<!-- logo -->
+			<h1>Valley Forge Fabrics</h1>
+			<!-- nav: search | login -->
+		</md-toolbar>
+	<!-- </header> -->
+	<!-- <section id="splash" ng-app="ngAnimate" ng-view>
+		
+	</section> -->
+	<section flex layout="row">
+		<md-sidenav md-is-locked-open="true" class="md-whiteframe-4dp">
+			<md-list>
+				<md-list-item></md-list-item>
+			</md-list>
+		</md-sidenav>
+		<md-content id="content" layout="row" flex><!-- ng-app="myApp" layout-fill -->
+			<section layout="column" flex layout-padding layout-margin>
+				<div id="about">
+					<a href="" title="">
+					</a>
+				</div>
+				<div id="collections">
+				</div>
+			</section>
+			<section layout="column" flex layout-padding layout-margin>
+				<div id="library">
+				</div>
+				<div id="weaveup">
+				</div>
+			</section>
+			<section layout="column" flex layout-padding layout-margin>
+				<div id="shades">
+				</div>
+				<div id="media">
+				</div>
+			</section>
+			<section layout="column" flex layout-padding layout-margin>
+				<div id="bedding">
+				</div>
+				<div id="contact">
+				</div>
+			</section>
+		</md-content>
+	</section>
+	<footer ng-view>
+		<md-toolbar layout="row">
+			<!-- &copy; 2016 Valley Forge Fabrics, Inc. -->
+			<md-nav-bar>
+				<md-nav-item md-nav-click="goto('contact')" name="contact">Contact Us</md-nav-item>
+				<md-nav-item md-nav-click="goto('privacy')" name="privacy">Privacy Policy</md-nav-item>
+				<md-nav-item md-nav-click="goto('terms')" name="terms">Terms and Conditions</md-nav-item>
+			</md-nav-bar>
+			<!-- Social Media Icons -->
+		</md-toolbar>
+	</footer>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<script type="text/javascript">
+		angular.module('BlankApp', ['ngMaterial']);
+	</script>
+</body>
+</html>

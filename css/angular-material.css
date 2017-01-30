@@ -211,9 +211,9 @@ md-select, md-card, md-list, md-toolbar, ul, ol, p, h1, h2, h3, h4, h5, h6 {
 /************
  * Defaults
  ************/
-button, select, html, textarea, input {
+/*button, select, html, textarea, input {
   font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif; }
-
+*/
 select, button, textarea, input {
   font-size: 100%; }
 
@@ -2886,7 +2886,7 @@ md-bottom-sheet {
     transition: all 0.3s cubic-bezier(0.55, 0, 0.55, 0.2); }
   md-bottom-sheet .md-subheader {
     background-color: transparent;
-    font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+    /*font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;*/
     line-height: 56px;
     padding: 0;
     white-space: nowrap; }
@@ -3362,7 +3362,7 @@ md-content {
 
 .md-chips {
   display: block;
-  font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;
+  /*font-family: RobotoDraft, Roboto, 'Helvetica Neue', sans-serif;*/
   font-size: 13px;
   padding: 0 0 8px 0;
   vertical-align: middle;
