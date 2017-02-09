@@ -391,6 +391,7 @@
 }
 /* Iphone 5 landscape */
 @media(max-width:767px) {
+	.block-related .slick-prev, .box-up-sell .slick-prev, .block.crosssell .slick-prev, .block-related .slick-next, .box-up-sell .slick-next, .block.crosssell .slick-next { display: none !important; }
 	.modal-popup.modal-slide { left: 0; }
 	.modals-wrapper .modal-popup .modal-inner-wrap { width: 100%; }
 	.block-new-customer .block-title, .block-customer-login .block-title {
@@ -1071,8 +1072,9 @@
 	.minicart-wrapper { padding-right: 40px;/*position: static;*/
 	}
 	.minicart-wrapper .block-minicart {
-		padding: 20px 10px 5px;
-		width: 50vw;
+		padding: 15px 15px 0;
+		right: -20%;
+		width: 85vw;
 	}
 	.main-collection .box, .slick-slide img, .product-image-photo { width: 100%; }
 	.testimonial_text { width: 80%; }
