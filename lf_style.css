@@ -999,27 +999,22 @@ visibility: visible; }
 #popup-newsletter .block-content { padding: 70px 90px 65px 90px; text-align: center; width: 60%; float: right; }
 .newsletter-new { display: inline-block; }
 .fancybox-close { top: -13px !important; right: -13px !important; height: 30px !important; width: 31px !important; }
-
 @media (min-width: 768px) and (max-width: 991px) {
 #popup-newsletter { width: 718px !important; background-size: cover; background-repeat: no-repeat; }
 #popup-newsletter .block-content { width: 65%; }
 }
-
 @media(max-width:767px) {
 #popup-newsletter { width: 100% !important; background-position: 60%; }
 #popup-newsletter .block-content { padding: 70px 50px 65px; }
 }
-
 @media(max-width:640px) {
 #popup-newsletter form:before, #popup-newsletter form:after { content: ""; clear: both; display: table; }
 #popup-newsletter { background-image: none !important; background-color: #f0f0f0; height: auto !important; }
 #popup-newsletter .block-content { width: 100%; padding: 50px; }
 }
-
 @media(max-width:380px) {
 #popup-newsletter .block-content { width: 90%; padding: 40px 0; float: none; margin: 0 auto; }
 }
-
 @media(max-width:320px) {
 #popup-newsletter .form-subscribe-header label { font-size: 18px; line-height: 25px; }
 #popup-newsletter .block-content p { font-size: 13px; }
@@ -1193,7 +1188,6 @@ ul.magictabs { padding: 0; }
 .timer-box span b { font-size: 18px; }
 .timer-box span.title { font-size: 13px; position: relative; padding-top: 3px; }
 .timer-box span.title:before { content: ""; position: absolute; width: 17px; height: 1px; background-color: #fff; top: 0; left: calc(50% - 8px); }
-
 @media (min-width: 1500px) {
 .deal-content .deal-product { top: calc(50% - 175px); }
 .timer-view .box span { line-height: 22px; }
@@ -1992,9 +1986,7 @@ visibility: visible; }
 .multiple-checkout .box h2 { color: #965554; }
 .multiple-checkout .place-order .please-wait { float: right; padding: 27px 7px 0 0; }
 .multiple-checkout .place-order .grand-total { float: right; height: 71px; font-size: 1.5em; padding: 0 0 0 21px; overflow: hidden; }
-.multiple-checkout .place-order .grand-total .inner { float: left; height: 71px; padding: 14px 0 0;
-
-}
+.multiple-checkout .place-order .grand-total .inner { float: left; height: 71px; padding: 14px 0 0; }
 .multiple-checkout .place-order .grand-total .inner div { display: inline; }
 .multiple-checkout .place-order .grand-total big { display: inline; margin-right: 12px; }
 .multiple-checkout .place-order .grand-total .price { color: #d22753; }
