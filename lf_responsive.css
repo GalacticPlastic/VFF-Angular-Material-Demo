@@ -443,7 +443,7 @@
 	}
 	.nav-toggle:before {
 		color: #8f8f8f;
-		content: "\f067";
+		/*content: "\f067"; <-- Hamburger Icon populated from styles-m.css */
 		display: inline-block;
 		font-family: "icons-blank-theme";
 		font-size: 28px;
