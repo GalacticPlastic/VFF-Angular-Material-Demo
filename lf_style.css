@@ -586,7 +586,8 @@ tr.summary-details-excluded { font-style: italic; }
 .block-minicart .amount .price-wrapper:first-child .price { font-size: 16px; font-weight: normal; }
 .block-minicart .block-content > .actions { padding: 0; }
 .block-minicart .block-content > .actions .secondary .viewcart { text-transform: uppercase; border-width: 1px; border-style: solid; display: block; line-height: 35px; text-align: center; float: none; color: #666; }
-.block-minicart .block-content > .actions > .primary { margin: 0 0 15px; }
+/* === 02/09 Temporarily Disabled === */
+.block-minicart .block-content > .actions > .primary { display: none; margin: 0 0 15px; }
 .block-minicart .block-content > .actions > .primary .action.primary { border-width: 1px; border-style: solid; color: #fff; display: block; font-size: 11px; line-height: 35px; margin-bottom: 15px; padding: 0 20px; text-transform: uppercase; width: 100%; }
 .minicart-items-wrapper { margin: 0; padding: 15px 0; border: 0; overflow-x: auto; }
 .minicart-items-wrapper .product-item-photo { display: block; overflow: hidden; position: relative; }
@@ -674,81 +675,53 @@ tr.summary-details-excluded { font-style: italic; }
 .figcaption .text-slide3:before { animation-name: alothemes; -moz-animation-name: alothemes; -webkit-animation-name: alothemes; -o-animation-name: alothemes; animation-duration: 2s; -moz-animation-duration: 2s; -webkit-animation-duration: 2s; -o-animation-duration: 2s; }
 /*For Effec caption slick slider*/
 @keyframes alothemes {
- from {
-transform: scale(0);
-opacity: 0;
-visibility: hidden; }
- to {
-transform: scale(1);
-opacity: 1;
-visibility: visible; }
+	from { transform: scale(0); opacity: 0; visibility: hidden; }
+	to { transform: scale(1); opacity: 1; visibility: visible; }
 }
 @-webkit-keyframes fadeInLeft {
- 0% {
- opacity: 0;
- -webkit-transform: translateX(-50px);
- transform: translateX(-50px); }
- 100% {
- opacity: 1;
- -webkit-transform: translateX(0);
- transform: translateX(0); }
+	0% { opacity: 0; -webkit-transform: translateX(-50px); transform: translateX(-50px); }
+	100% { opacity: 1; -webkit-transform: translateX(0); transform: translateX(0); }
 }
 @keyframes fadeInLeft {
  0% {
- opacity: 0;
- -webkit-transform: translateX(-50px);
- -ms-transform: translateX(-50px);
+ opacity: 0; -webkit-transform: translateX(-50px); -ms-transform: translateX(-50px);
  transform: translateX(-50px); }
  100% {
- opacity: 1;
- -webkit-transform: translateX(0);
- -ms-transform: translateX(0);
+ opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0);
  transform: translateX(0); }
 }
 .fadeInLeft { -webkit-animation-name: fadeInLeft; animation-name: fadeInLeft; }
 @-webkit-keyframes fadeInRight {
  0% {
- opacity: 0;
- -webkit-transform: translateX(50px);
+ opacity: 0; -webkit-transform: translateX(50px);
  transform: translateX(50px); }
  100% {
- opacity: 1;
- -webkit-transform: translateX(0);
+ opacity: 1; -webkit-transform: translateX(0);
  transform: translateX(0); }
 }
 @keyframes fadeInRight {
  0% {
- opacity: 0;
- -webkit-transform: translateX(50px);
- -ms-transform: translateX(50px);
+ opacity: 0; -webkit-transform: translateX(50px); -ms-transform: translateX(50px);
  transform: translateX(50px); }
  100% {
- opacity: 1;
- -webkit-transform: translateX(0);
- -ms-transform: translateX(0);
+ opacity: 1; -webkit-transform: translateX(0); -ms-transform: translateX(0);
  transform: translateX(0); }
 }
 .fadeInRight { -webkit-animation-name: fadeInRight; animation-name: fadeInRight; }
 @-webkit-keyframes fadeInUp {
  0% {
- opacity: 0;
- -webkit-transform: translateY(50px);
+ opacity: 0; -webkit-transform: translateY(50px);
  transform: translateY(50px); }
  100% {
- opacity: 1;
- -webkit-transform: translateY(0);
+ opacity: 1; -webkit-transform: translateY(0);
  transform: translateY(0); }
 }
 @keyframes fadeInUp {
  0% {
- opacity: 0;
- -webkit-transform: translateY(50px);
- -ms-transform: translateY(50px);
+ opacity: 0; -webkit-transform: translateY(50px); -ms-transform: translateY(50px);
  transform: translateY(50px); }
  100% {
- opacity: 1;
- -webkit-transform: translateY(0);
- -ms-transform: translateY(0);
+ opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0);
  transform: translateY(0); }
 }
 .fadeInUp { -webkit-animation-name: fadeInUp; animation-name: fadeInUp; }
@@ -1266,14 +1239,8 @@ ul.magictabs { padding: 0; }
 .item .actions-cart .button.btn-cart:before { display: none; }
 .item .actions-cart .button.btn-cart span { font-size: 14px; }
 @keyframes alo_themes {
- from {
-transform: translateX(50px) scale(1, 0);
-opacity: 0;
-visibility: hidden; }
- to {
-transform: translateX(0) scale(1, 1);
-opacity: 1;
-visibility: visible; }
+	from { transform: translateX(50px) scale(1, 0); opacity: 0; visibility: hidden; }
+	to { transform: translateX(0) scale(1, 1); opacity: 1; visibility: visible; }
 }
 .item .actions-no .button.btn-cart:before, .list .item .action.tocart:before, .product-view .add-to-cart button.button:before { /*content: "\f067; display: inline-block; font-family: "FontAwesome"; font-size: 12px; padding-right: 2px;*/ }
 .stock.unavailable { /*background-image: url(../images/alothemes/outofstock_icon.png);background-position: 0 0;background-repeat: no-repeat;height: 35px;width: 35px;margin-bottom: 8px;*/ }
