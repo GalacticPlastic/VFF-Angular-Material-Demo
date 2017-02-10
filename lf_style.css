@@ -311,10 +311,10 @@ p.required { font-size: 11px; text-align: right; color: #EB340A; }
 .checkout-index-index .content-seach, .checkout-index-index .content-cart { display: none; }
 .checkout-index-index .minicart-wrapper { margin-right: 0; margin-top: 0; padding: 0; }
 .minicart-wrapper .action.showcart { border: 0 none; padding: 0; background-color: transparent; }
-.checkout-index-index .minicart-wrapper .action.showcart:before { color: #666; content: "\f067"; display: inline-block; font-family: "FontAwesome"; font-size: 35px; font-weight: normal; line-height: 33px; margin: 0; overflow: hidden; text-align: center; vertical-align: top; }
+.checkout-index-index .minicart-wrapper .action.showcart:before { color: #666; content: "\f040"; display: inline-block; font-family: "FontAwesome"; font-size: 1.5rem; font-weight: normal; line-height: 2rem; margin: 0 0 0 10px; overflow: hidden; text-align: center; vertical-align: top; }
 .opc-estimated-wrapper .estimated-block .estimated-label, .opc-estimated-wrapper .estimated-block .estimated-price { font-size: 18px; font-weight: 600; }
 .checkout-container .modal-custom .action-close { right: 35px; }
-.checkout-container { margin: 120px 0 20px; }
+.checkout-container { margin: 0; }
 .opc-block-shipping-information { padding: 0 30px; }
 /* Bundle products tables */
 .data-table tbody.odd tr { background: #f8f7f5 !important; }
@@ -586,8 +586,11 @@ tr.summary-details-excluded { font-style: italic; }
 .block-minicart .amount .price-wrapper:first-child .price { font-size: 16px; font-weight: normal; }
 .block-minicart .block-content > .actions { padding: 0; }
 .block-minicart .block-content > .actions .secondary .viewcart { text-transform: uppercase; border-width: 1px; border-style: solid; display: block; line-height: 35px; text-align: center; float: none; color: #666; }
-/* === 02/09 Temporarily Disabled === */
-.block-minicart .block-content > .actions > .primary { display: none; margin: 0 0 15px; }
+/* =========================== 02/09 Temporarily Disabled ============================ */
+.block-minicart .block-content > .actions > .primary { display: none; }
+main#maincontent { min-height: auto; }
+/* =================================================================================== */
+.block-minicart .block-content > .actions > .primary { margin: 0 0 15px; }
 .block-minicart .block-content > .actions > .primary .action.primary { border-width: 1px; border-style: solid; color: #fff; display: block; font-size: 11px; line-height: 35px; margin-bottom: 15px; padding: 0 20px; text-transform: uppercase; width: 100%; }
 .minicart-items-wrapper { margin: 0; padding: 15px 0; border: 0; overflow-x: auto; }
 .minicart-items-wrapper .product-item-photo { display: block; overflow: hidden; position: relative; }
@@ -958,6 +961,7 @@ tr.summary-details-excluded { font-style: italic; }
 #popup-newsletter .form-subscribe-header { position: relative; display: block; }
 #popup-newsletter .block-content p { font-size: 14px; text-align: center; font-weight: normal; color: #6b6b6b; margin: 11px 0 0; }
 #popup-newsletter .block-content p span { color: #f0b250; }
+
 #popup-newsletter .subscribe-bottom { display: block; margin: 50px 0 0; padding: 0; color: #6b6b6b; font-size: 13px; }
 #popup-newsletter .subscribe-bottom input { margin: 0 5px 1px 0; }
 #popup-newsletter .block-content .input-box { width: 100%; }
@@ -1216,6 +1220,7 @@ ul.magictabs { padding: 0; }
 .block-custom.block-custom2 .images-container .actions-no .button.btn-cart { width: 100%; }
 .item .add-to-links a { color: #777; display: block !important; font-size: 15px; line-height: 30px; font-weight: normal; padding: 0; }
 .item .add-to-links a:hover { color: #ea5648; }
+
 .per-product, .images-container { position: relative; }
 .images-container { overflow: hidden; }
 .hover-box > a.detail_links { bottom: 0; left: 0; position: absolute; right: 0; top: 0; }
@@ -1261,6 +1266,7 @@ ul.magictabs { padding: 0; }
 .custom-product .item .hover-box .actions { text-align: left; margin-top: 16px; }
 .cms-static-product-sidebar .mage-custom .item .hover-box .actions { display: none; }
 .custom-product ul.magictabs { margin-bottom: 30px; margin-top: 60px; }
+
 .custom-product .grid .product-item-info { padding-bottom: 30px; }
 .sidebar .custom-product .product-items .product-item-info .product-item-photo { float: none; margin: 0; padding: 0; position: static; }
 .sidebar .custom-product .product-items .product-item { margin-bottom: 0; }
