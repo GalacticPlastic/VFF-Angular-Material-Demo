@@ -133,7 +133,7 @@ Open Putty and login. Terminal command:
 
 [phpMyAdmin Database Tables](#mage-db)
 ------------------------------------------
-Open: *LiquidWeb / WebHost Manage / cPanel / Databases / phpMyAdmin*.
+Open: *Hosting / WebHost Manage / cPanel / Databases / phpMyAdmin*.
 
 1. ```core_config_data```
 	- Change to dev. for http and https (col 2 and 3)
