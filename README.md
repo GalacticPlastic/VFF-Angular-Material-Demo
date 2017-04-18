@@ -20,9 +20,8 @@ VFF Demo Project using Angular Material
 - **Grid Text:** Helvetica Neue roman.
 -**Drop Menu and Footer:** Helvetica Neue Lt light.
 
-====
+## Magento Basics
 
-##Magento Basics
 [Magento Commands](#mage-commands)
 ----------------------------------------
 - php bin/magento [module:status](http://devdocs.magento.com/guides/v2.0/install-gde/install/cli/install-cli-subcommands-enable.html)
