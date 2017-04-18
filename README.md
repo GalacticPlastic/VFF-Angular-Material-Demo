@@ -20,8 +20,6 @@ VFF Demo Project using Angular Material
 - **Grid Text:** Helvetica Neue roman.
 -**Drop Menu and Footer:** Helvetica Neue Lt light.
 
-## Magento Basics
-
 [Magento Commands](#mage-commands)
 ----------------------------------------
 - php bin/magento [module:status](http://devdocs.magento.com/guides/v2.0/install-gde/install/cli/install-cli-subcommands-enable.html)
@@ -41,7 +39,7 @@ Terminal command (use Putty):
 1. Puts the store in maintenance mode.
 2. Executes one of the following command options:
 
-| Option  | Meaning	                                            | Filename/Location                            |
+| Option  | Meaning	                                        | Filename/Location                            |
 | ------- |-----------------------------------------------------| ---------------------------------------------|
 | --code  | Backs up Mage files (excluding var and pub/static). | var/backups/<timestamp>_filesystem.tgz       |
 | --media | Backs up pub/media.                                 | var/backups/<timestamp>_filesystem_media.tgz |
