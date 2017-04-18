@@ -11,21 +11,18 @@ VFF Demo Project using Angular Material
 - Login pop-up and form should work. (Submitting login form will close the login pop-up.)
 
 ### Utilities:
-[Angular Material](https://material.angularjs.org/latest/)
+- [Angular Material](https://material.angularjs.org/latest/)
  
 ### Animation References:
-[Mikiya Kobayashi](http://www.mikiyakobayashi.com)
+- [Mikiya Kobayashi](http://www.mikiyakobayashi.com)
  
 ### Fonts:
-**Grid Text:** Helvetica Neue roman.
+- **Grid Text:** Helvetica Neue roman.
+-**Drop Menu and Footer:** Helvetica Neue Lt light.
 
-**Drop Menu and Footer:** Helvetica Neue Lt light.
+====
 
-
-
-Magento Basics
-===
-
+##Magento Basics
 [Magento Commands](#mage-commands)
 ----------------------------------------
 - php bin/magento [module:status](http://devdocs.magento.com/guides/v2.0/install-gde/install/cli/install-cli-subcommands-enable.html)
